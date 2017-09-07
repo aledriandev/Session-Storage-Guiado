@@ -8,6 +8,48 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!--Formulario-->
+  <div class="container">
+    <section id="formulario">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 datos">
+          <div class="form-group">
+            <label for="user">Name:</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 datos">
+          <div class="form-group">
+            <label for="user">Clave:</label>
+            <input type="password" class="form-control" id="clave">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <button type="button" class="btn btn-primary" onclick="saveData()" value="Guardar datos">Guardar datos</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <p id="data">Pulsa para ver tu nombre y tu password.</p>
+          <button type="button" class="btn btn-primary" onclick="recoverData()" value="Recuperar datos">Recuperar datos</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <button type="button" class="btn btn-primary" onclick="cleanData()" value="Limpiar datos">Limpiar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 text-center">
+          <button type="button" class="btn btn-primary" onclick="borrarTodo()" value="Borrar Datos">Borrar Datos</button>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <script src="https://use.fontawesome.com/4154d90246.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
